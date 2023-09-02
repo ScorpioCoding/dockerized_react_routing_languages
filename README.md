@@ -30,3 +30,14 @@ React.md is the official documentation that comes with creating a react app.
 => `docker compose up -d --build` start command  
 => `docker compose down -v` shutdown command  
 => `localhost:4080` docker port (one can change this)
+
+### 0.1.3 : Update Dependencies (package.json)
+
+=> `npm update`
+
+### 0.1.4 : Sass
+
+=> `npm install sass`  
+=> add: folder css  
+=> remove index.css  
+=> add: App.scss
