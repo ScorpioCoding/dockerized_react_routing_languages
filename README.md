@@ -42,3 +42,18 @@ React.md is the official documentation that comes with creating a react app.
 => remove index.css  
 => add: App.scss  
 => mod: App.js
+
+### 0.2.0 : React Routing - Navigation Bar
+
+=> `npm install react-router-dom`  
+=> add: Pages : Home.js  
+=> add: Pages : Contact.js  
+=> add: Pages : About.js  
+=> add: Pages : index.js  
+=> add: css : Home.scss  
+=> add: css : Contact.scss  
+=> add: css : About.scss  
+=> mod: index.js  
+=> mod: App.js  
+=> add: Components : NavBar.js  
+=> add: css : NavBar.scss

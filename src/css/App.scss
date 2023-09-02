@@ -1,4 +1,60 @@
 //
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  block-size: 100%;
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg,
+picture,
+video {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 5rem;
+
+  width: 90%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    height: 100%;
+  }
+}
+
+
+
+
+
 .App {
-  text-align: center;
+  //text-align: center;
 }
