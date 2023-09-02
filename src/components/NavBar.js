@@ -1,11 +1,17 @@
 //
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 import "../css/NavBar.scss";
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation();
+  const lang = (code) => {
+    i18next.changeLanguage(code);
+  };
   return (
     <>
       <nav>
@@ -32,7 +38,7 @@ export const NavBar = () => {
                     setMenuOpen(!menuOpen);
                   }}
                 >
-                  Home
+                  {t("home")}
                 </NavLink>
               </li>
               <li>
@@ -42,7 +48,7 @@ export const NavBar = () => {
                     setMenuOpen(!menuOpen);
                   }}
                 >
-                  About
+                  {t("about")}
                 </NavLink>
               </li>
               <li>
@@ -52,8 +58,37 @@ export const NavBar = () => {
                     setMenuOpen(!menuOpen);
                   }}
                 >
-                  Contact
+                  {t("contact")}
                 </NavLink>
+              </li>
+            </ul>
+            <ul className='list_langs'>
+              <li>
+                <Link
+                  onClick={() => {
+                    lang("en");
+                  }}
+                >
+                  en
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => {
+                    lang("fr");
+                  }}
+                >
+                  fr
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => {
+                    lang("nl");
+                  }}
+                >
+                  nl
+                </Link>
               </li>
             </ul>
           </div>

@@ -85,6 +85,42 @@ nav {
       }
     }
 
+
+    .list_langs {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+
+      li {
+        list-style: none;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding: 0.25rem;
+
+
+
+          &:not(.active):hover {
+            background-color: #777;
+            border-bottom: 2px solid cadetblue;
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+
+
   }
 
   @media (max-width: 480px) {
@@ -116,6 +152,28 @@ nav {
           }
         }
       }
+
+      .list_langs {
+        flex-direction: row;
+        align-items: stretch;
+        margin-bottom: 0.25rem;
+        width: 100%;
+
+        li {
+          a {
+            font-size: var(--fs-500);
+            margin: 0.2rem 0.5rem;
+          }
+        }
+      }
+
+
+
+
+
+
+
+
     }
 
     .closed {

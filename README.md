@@ -57,3 +57,24 @@ React.md is the official documentation that comes with creating a react app.
 => mod: App.js  
 => add: Components : NavBar.js  
 => add: css : NavBar.scss
+
+### 0.3.0 : React Multiple Languages - Translation
+
+=> `npm install react-i18next i18next`  
+=> `npm install i18next-browser-languagedetector`  
+=> add: i18n.js  
+=> mod: index.js  
+=> add: assets/translations directory  
+=> add: en.nav.json  
+=> add: fr.nav.json  
+=> add: nl.nav.json  
+=> add: en.home.json  
+=> add: fr.home.json  
+=> add: nl.home.json  
+=> add: en.about.json  
+=> add: fr.about.json  
+=> add: nl.about.json  
+=> mod: NavBar.js  
+=> mod: css : NavBar.scss  
+=> mod: Pages : Home.js  
+=> mod: Pages : About.js

@@ -1,13 +1,15 @@
 //
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "../css/About.scss";
 
 export const About = () => {
+  const { t } = useTranslation();
   return (
     <main className='about'>
       <div className='container'>
-        <h1>ABOUT PAGE</h1>
+        <h1>{t("about:title")}</h1>
         <br />
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ea
