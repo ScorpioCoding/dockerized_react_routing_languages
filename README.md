@@ -40,4 +40,5 @@ React.md is the official documentation that comes with creating a react app.
 => `npm install sass`  
 => add: folder css  
 => remove index.css  
-=> add: App.scss
+=> add: App.scss  
+=> mod: App.js
